@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Dan's Website - Check it out</title>
+        <meta charset="utf-8"/>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="robots" content="noodp,noydir">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- <meta name="theme-color" content="#fefefe"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="#fefefe"> -->
+        <!-- <link rel="manifest" href="/manifest.json"> -->
+        <!-- <link rel="icon" href="css/img/IN_Design_logo.ico"/> -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head>
+    <body>
+        <article class="container">
+            <nav>
+                /<a href="">Dan's Website</a>/
+            </nav>
+            <main>
+                <div id="canvas">
+                </div>
+                <section id="about">
+                    <h1>About</h1>
+
+                    <p>
+                        Welcome! I'm Dan, I enjoy programming, fish keeping, nature, and distance running. 
+                        I made this site for me to post things I'm working on, thinking about or learning about, as a way to
+                        document my progress, flesh out ideas, and develop a deeper understanding respectively.
+                        I am close to graduating from Texas A&M University and looking for work for after I graduate in May.
+                    </p>
+                    <p>
+                        I'm excited to learn more about programming topics including hardware design, embedded systems, 
+                        computer graphics, and parallel computing. I also like to dabble in web development every now and again,
+                        so I'll also have some web development content on here.
+                        This website will serve to motivate me and to document in one form or another the multitude of
+                        project ideas I try and juggle around. Hopely I can keep things up to date and thanks for reading!
+                    </p>
+                </section>
+
+                <section id="work">
+                    <h1>Work
+                        <svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0z" fill="none"/>
+                            <path d="M22 34h4V22h-4v12zm2-30C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16zm-2-22h4v-4h-4v4z"/>
+                        </svg>
+                        <small>Professional work I've done</small>
+                    </h1>
+
+                    <ul>
+                        <li><a href="https://www.instudiodesigngroup.com">instudiodesigngroup.com</a>: INStudionDesignGroup</li>
+                        <li><a class="drop-down-display">Linux administrator</a>: Texas A&M University</li>
+                    </ul>
+                </section>
+
+                <section id="projects">
+                    <h1>Projects
+                        <svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0z" fill="none"/>
+                            <path d="M22 34h4V22h-4v12zm2-30C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16zm-2-22h4v-4h-4v4z"/>
+                        </svg>
+                        <small>For fun or for learning projects</small>
+                    </h1>
+
+                    <ul>
+                       <li><a href="https::/www.github.com/DanielIrons/ledge_engine">ledge engine</a> : A graphics backend written in Rust using Vulkano and Winit</li>
+                       <li><a href="https::/www.github.com/DanielIrons/">unnamed UDP based protocol</a> : A networking protocol used for game data communication</li>
+                       <li><a href="https::/www.github.com/DanielIrons/mips_processor">mips microproccessor</a> : A basic pipelined microprocessor implemented in Verilog</li> 
+                       <li><a href="https::/www.github.com/DanielIrons/sizer">sizer</a> : A new project to create a synthesizer with a few basic functions in VHDL</li> 
+                    </ul>
+                </section>
+
+                <section id="entries">
+                    <h1>Entries
+                        <svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0z" fill="none"/>
+                            <path d="M22 34h4V22h-4v12zm2-30C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.82 0-16-7.18-16-16S15.18 8 24 8s16 7.18 16 16-7.18 16-16 16zm-2-22h4v-4h-4v4z"/>
+                        </svg>
+                        <small>This is where I make blog type posts about things I've been doing</small>
+                    </h1>
+
+                    <p>I gotta find something interesting to write about.</p>
+                    <ul id="entries-list"></ul>
+                </section>
+            </main>
+            <footer>
+                <ul class="social-icons-list">
+                    <li><a href="email:daniel.w.irons@protonmail.com">Email</a></li> 
+                    \
+                    <li><a href="https://www.linkedin.com/in/daniel-irons-315313169/">LinkedIn</a></li> 
+                    \
+                    <li><a href="https://www.github.com/DanielIrons/">Github</a></li>
+                </ul>
+                <div>
+                    <small><a href="sitemap.xml">sitemap</a></small>
+                    |
+                    <small><a href="privacy.html">privacy</a></small>
+                    |
+                    <small>&copy; Copyright 2021, Daniel Irons</small>
+                </div>
+
+            </footer>
+        </article>
+    </body>
+
+    <script src="{{ url_for('static', filename='js/three.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/particle-effects.js') }}"></script>
+</html>

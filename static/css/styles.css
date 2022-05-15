@@ -1,0 +1,142 @@
+@font-face {
+    font-family: InputMono-Light;
+    src: url("fonts/Input_Fonts/InputMono/InputMono/InputMono-Light.ttf");
+}
+
+:root {
+    --main-ac-color:  rgb(32, 116, 172);
+}
+
+html {
+}
+
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    color: var(--main-ac-color);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.075s, background-color 0.1s;
+    padding: 0.2rem 0 ;    
+}
+
+a:hover {
+    background-color: rgb(32, 116, 172);
+    color: white;
+}
+
+body {
+    font-family: InputMono-Light, Roboto, "Droid Sans";
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+#canvas {
+    height: 300px;
+    width: 960px;
+}
+
+/* canvas {
+    overflow:hidden;
+    height: 300px !important;
+    width: 960px !important;
+} */
+
+nav {
+    margin: 1rem 0 5rem 0;
+}
+
+section {
+    margin: 0 2rem;
+}
+
+section h1 {
+    margin: 4rem 0 2.5rem 0;
+    position: relative;
+    display: flex;
+}
+
+section h1 svg {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.25rem;
+    fill: rgba(100, 100, 100, 0.9);
+    cursor: pointer;
+}
+
+section small {
+    color: rgba(100, 100, 100, 0.9);
+    display: none;
+    font-size: 0.65rem;
+    margin: -0.25rem 0 0 0.5rem;
+}
+
+section h1 svg:hover + small {
+    display: flex;
+}
+
+section p {
+    margin: 1.5rem 1rem;
+}
+
+footer {
+    margin-top: 3rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.social-icons-list {
+    display: flex;
+    padding: 0;
+}
+
+.social-icons-list li {
+    margin: 0 0.25rem;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+footer div small {
+    margin: 0 0.25rem;
+}
+
+
+@media screen and (max-width: 800px) {
+    
+}
+@media screen and (max-width: 480px) {
+    #canvas {
+        width: 100%;
+    }
+
+    section p {
+        margin: 1rem 0;
+    }
+
+    nav {
+        margin-left: 1rem;
+    }
+
+    footer div small {
+        text-overflow: clip;
+        overflow-x: hidden;
+    }
+}
